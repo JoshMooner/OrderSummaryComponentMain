@@ -1,0 +1,236 @@
+/*Universal Settings*/
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+:root {
+    /*Colors*/
+
+    /*Primary*/
+    --Pale_blue: hsl(225, 100%, 94%);
+    --Bright_blue: hsl(245, 75%, 52%);
+
+    /*Neutral*/
+    --Very_pale_blue: hsl(225, 100%, 98%);
+    --Desaturated_blue: hsl(224, 23%, 55%);
+    --Dark_blue: hsl(223, 47%, 23%);
+}
+
+body {
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Pale_blue);
+    background-image: url(./images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: grid;
+}
+
+.container {
+    width: 430px;
+    height: 650px;
+    margin: auto;
+    border-radius: 20px;
+    background-color: #fff;
+    text-align: center;
+    box-shadow: 0px 10px 20px rgba(75, 75, 75, 25%);
+}
+
+.hero {
+    width: 100%;
+}
+
+.hero__img {
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+    margin: 0;
+}
+
+.title__h1 {
+    margin-top: 35px;
+    color: var(--Dark_blue);
+}
+
+.subtitle__p {
+    font-size: 16px;
+    margin: 20px 60px;
+    color: var(--Desaturated_blue);
+}
+
+.plan {
+    display: flex;
+    padding: 5px;
+    margin: 10px 40px;
+    border-radius: 20px;
+    background-color: var(--Very_pale_blue);
+    height: 100px;
+}
+
+.plan_container {
+    display: flex;
+    margin: auto 20px;
+}
+
+.plan_container__music {
+    width: 50px;
+    height: 50px;
+    margin: auto 0;
+}
+
+.plan_container_information {
+    margin: auto 0 auto 20px;
+    text-align: left;
+    line-height: 25px;
+}
+
+.plan_container_information__type {
+    color: var(--Dark_blue);
+}
+
+.plan_container_information__cost {
+    color: var(--Desaturated_blue);
+}
+
+.plan_active {
+    position: relative;
+    left: 75px;
+    margin: auto 0;
+}
+
+.plan_active__button {
+    color: var(--Bright_blue);
+    font-weight: 600;
+}
+
+.plan_active__button:hover {
+    opacity: 0.75;
+}
+
+button {
+    width: 350px;
+}
+
+.buttons__payment {
+    display: flex;
+    margin: 30px auto 10px auto;
+    justify-content: center;
+    background-color: var(--Bright_blue);
+    color: var(--Very_pale_blue);
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: opacity 0.25s;
+    font-weight: 700;
+    border: 1px solid transparent;
+    box-shadow: 0px 15px 20px rgba(75, 75, 75, 25%);
+}
+
+.buttons__payment:hover {
+    opacity: 0.75;
+    transition: opacity 0.25s;
+}
+
+.buttons__cancel {
+    margin: 30px auto 10px auto;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    border: none;
+    background-color: transparent;
+    color: var(--Desaturated_blue);
+    font-weight: 800;
+    transition: color 0.25s;
+    cursor: pointer;
+}
+
+.buttons__cancel:hover {
+    color: var(--Dark_blue);
+    transition: color 0.25s;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 375px) {
+    body {
+        width: 375px;
+    }
+
+    .container {
+        width: 325px;
+        height: auto;
+        margin: 50px auto;
+    }
+
+    .title__h1 {
+        margin: 20px auto;
+        font-size: 25px;
+    }
+
+    .subtitle {
+        margin: 10px 10px;
+    }
+
+    .subtitle__p {
+        font-size: 14px;
+        margin: 20px 40px;
+    }
+
+    .plan {
+        height: 65px;
+        width: 270px;
+        margin: 10px auto;
+    }
+
+    .plan_container {
+        display: flex;
+        margin: auto 5px;
+    }
+
+    .plan_container__music {
+        width: 45px;
+        height: 45px;
+        margin: auto 0;
+    }
+
+    .plan_container_information {
+        margin: auto 0 auto 15px;
+        text-align: left;
+        line-height: 25px;
+    }
+
+    .plan_container_information__type {
+        font-size: 13px;
+    }
+
+    .plan_active {
+        position: relative;
+        left: 55px;
+        margin: auto 0;
+    }
+
+    button {
+        width: 275px;
+    }
+
+    .buttons__payment {
+        margin: 20px auto 10px auto;
+    }
+
+    .buttons__cancel {
+        margin: 30px auto;
+    }
+
+    .attribution {
+        margin: auto;
+    }
+}
